@@ -1,0 +1,77 @@
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* ⬅ wider cards */
+  gap: 32px;
+  padding: 60px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 28px;
+  min-height: 240px;       /* ⬅ taller cards */
+  box-shadow: 0 22px 40px rgba(0, 0, 0, 0.12);
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 14px;
+  color: #333;
+}
+
+.card p {
+  font-size: 15px;
+  color: #666;
+  margin: 8px 0;
+}
+
+.btns {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.update {
+  flex: 1;
+  padding: 12px;
+  border-radius: 14px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: teal;
+}
+
+.delete {
+  flex: 1;
+  padding: 12px;
+  border-radius: 14px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(135deg, #ff6b6b, #e63946);
+}
+
+.update:hover,
+.delete:hover {
+  transform: translateY(-2px);
+}
+
+.empty {
+  text-align: center;
+  margin-top: 180px;
+  color: #888;
+}
+
+.empty h2 {
+  font-size: 30px;
+}
+
+.empty p {
+  font-size: 15px;
+}
